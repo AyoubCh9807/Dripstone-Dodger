@@ -1,0 +1,13 @@
+﻿  main.cpp
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(7,23): warning C4244: '=': conversion from 'const int' to 'float', possible loss of data
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(8,23): warning C4244: '=': conversion from 'const int' to 'float', possible loss of data
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(9,23): warning C4244: '=': conversion from 'const int' to 'float', possible loss of data
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(10,23): warning C4244: '=': conversion from 'const int' to 'float', possible loss of data
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(14,12): error C2065: 'groundLevel': undeclared identifier
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(30,18): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(35,17): warning C4244: 'initializing': conversion from 'Uint64' to 'Uint32', possible loss of data
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(98,26): warning C4244: 'initializing': conversion from 'Uint64' to 'Uint32', possible loss of data
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(111,35): warning C4244: '=': conversion from 'Uint64' to 'Uint32', possible loss of data
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(134,47): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(145,32): warning C4244: 'initializing': conversion from 'Uint64' to 'Uint32', possible loss of data
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(159,59): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data

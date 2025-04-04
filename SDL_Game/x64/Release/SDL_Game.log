@@ -1,0 +1,26 @@
+﻿  main.cpp
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(10,23): warning C4244: '=': conversion from 'const int' to 'float', possible loss of data
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(11,23): warning C4244: '=': conversion from 'const int' to 'float', possible loss of data
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(12,23): warning C4244: '=': conversion from 'const int' to 'float', possible loss of data
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(13,23): warning C4244: '=': conversion from 'const int' to 'float', possible loss of data
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(46,18): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(51,17): warning C4244: 'initializing': conversion from 'Uint64' to 'Uint32', possible loss of data
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(121,26): warning C4244: 'initializing': conversion from 'Uint64' to 'Uint32', possible loss of data
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(150,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(162,35): warning C4244: '=': conversion from 'Uint64' to 'Uint32', possible loss of data
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(186,47): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(198,53): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(226,39): warning C4244: '=': conversion from 'Uint64' to 'Uint32', possible loss of data
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(240,59): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(249,54): warning C4244: 'argument': conversion from 'float' to 'const int', possible loss of data
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(249,44): warning C4244: 'argument': conversion from 'float' to 'const int', possible loss of data
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(252,91): warning C4244: 'argument': conversion from 'double' to 'const int', possible loss of data
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(255,43): warning C4244: 'argument': conversion from 'double' to 'const int', possible loss of data
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(266,45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\SDL_Game\main.cpp(267,44): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Generating code
+  0 of 18 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  SDL_Game.vcxproj -> C:\Users\Medgaaloul\Desktop\index\c++\SDL_Game\x64\Release\SDL_Game.exe
