@@ -112,11 +112,8 @@ int main(int argc, char* argv[]) {
     SDL_Texture* dripstone_DOWNTexture = SDL_CreateTextureFromSurface(renderer, SDL_LoadBMP("dripstone_DOWN.bmp"));
     SDL_Texture* GAME_BANNERTexture = SDL_CreateTextureFromSurface(renderer, SDL_LoadBMP("DripstoneDodgerBanner.bmp"));
     SDL_Texture* GAME_LOST_BANNERTexture = SDL_CreateTextureFromSurface(renderer, SDL_LoadBMP("LOSE_SCREEN.bmp"));
-
     SDL_FPoint playerCenterPt;
   
-
- 
     int currentFrame = 0;
     Uint32 lastFrameTime = SDL_GetTicks();
     bool running = false;
@@ -129,6 +126,7 @@ int main(int argc, char* argv[]) {
         if (kbdState[SDL_SCANCODE_SPACE]) {
             running = true;
             SDL_DestroyTexture(GAME_BANNERTexture); // Clean up the banner texture
+            LOST = false;
             break;
         }
     }
@@ -145,14 +143,8 @@ loseLabel:
             break;
         }
     }
-
-   
     srand(time(0));
-    
     while (running) {
-
-        
-
         while (SDL_PollEvent(&event)) {
             if (event.type == SDL_EVENT_QUIT) {
                 running = false;
@@ -221,13 +213,11 @@ loseLabel:
                 goto loseLabel;
             }
         }
-
         if (state[SDL_SCANCODE_LEFT] || state[SDL_SCANCODE_RIGHT]) {
             currentTime = SDL_GetTicks();
             if (currentTime - lastFrameTime > ANIMATION_SPEED) {
                 currentFrame = (currentFrame + 1) % player_TOTAL_FRAMES;
                 lastFrameTime = currentTime;
-                // cout << "Current Frame: " << currentFrame << std::endl;
             }
         }
         else {
@@ -238,12 +228,9 @@ loseLabel:
         }
         
         player_POS_X += player_DIRECTION_X * player_SPEED * deltaTime;
-
-        
         
         playerCenterPt.x = playerFrame.x + (playerFrame.w / 2); // Center x
         playerCenterPt.y = playerFrame.y + (playerFrame.h / 2); // Center y
-
 
         SDL_RenderClear(renderer);
         setImagePosition(bg_POS, 640, 360, bg_POS_X, bg_POS_Y);
@@ -254,12 +241,7 @@ loseLabel:
         setImagePosition(dirt_block_POS, polyT_WIDTH, polyT_HEIGHT, 0, getGroundBlockPosY(
             gem_block_POS , polyT_HEIGHT) + polyT_HEIGHT);
         setImagePosition(dripstone_DOWN_POS, 32, 32, dripstone_POS_X, dripstone_POS_Y);
-
-
-
         SDL_SetRenderDrawColor(renderer, 0x00, 0x00, 0x00, 0xFF); 
-
-
         SDL_RenderTexture(renderer, bgTexture_PRAIRIE, NULL, &bg_POS);
         SDL_RenderTexture(renderer, grassBlockTexture, NULL, &grass_block_POS);
         for (int i = 0; i < 10; i++) {
@@ -270,8 +252,6 @@ loseLabel:
         }
 
         SDL_RenderTexture(renderer, dripstone_DOWNTexture, NULL, &dripstone_DOWN_POS);
-
-
         SDL_RenderTextureRotated(renderer, playerT, &playerPortion, &playerFrame, 0, &playerCenterPt, 
             playerFacing);
         // the final product fr fr 
